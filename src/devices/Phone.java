@@ -8,9 +8,9 @@ import java.util.List;
 public class Phone extends Device implements Salleable {
     final public Double screenSize;
     final public String operationSystem;
-    private static final String DEFAULT_APP_SERVER_URL = "http://127.0.0.1/";
-    private static final String DEFAULT_PROTOCOL = "2137";
-    private static final String DEFAULT_VERSION_NAME = "1.6.9";
+    private static final String DEFAULT_APP_SERVER_URL = "www.com.com";
+    private static final String DEFAULT_PROTOCOL = "1488";
+    private static final String DEFAULT_VERSION_NAME = "wojtylus_maximus";
     public Phone(String model, String producer, Integer yearofproduction, Double screenSize, String operationSystem) {
         super(model, producer, yearofproduction);
         this.screenSize = screenSize;

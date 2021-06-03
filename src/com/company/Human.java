@@ -39,12 +39,12 @@ public class Human extends Animal implements Washable, Comparable<Human> {
 
     @Override
     public void wash() {
-        System.out.println("Myju mmujy");
+        System.out.println("Washed!");
     }
 
     @Override
     public void dry() {
-        System.out.println("Szzzzzz");
+        System.out.println("ZZzzzzzzz");
     }
 
     @Override
@@ -57,11 +57,11 @@ public class Human extends Animal implements Washable, Comparable<Human> {
     public void setCar(Car car) {
         if (salary > car.value)
         {
-            System.out.println("udało się kupić za gotówkę\n "+car.producer+" "+car.model+" "+"Rocznik "+car.yearofproduction);
+            System.out.println("You bought\n "+car.producer+" "+car.model+" "+"Year of production "+car.yearofproduction);
             this.car = car;
         }
         else if (salary> car.value/12){
-            System.out.println("udało się kupić na kredyt\n "+car.producer+""+car.model+" "+"Rocznik "+car.yearofproduction);
+            System.out.println("You bought\n "+car.producer+""+car.model+" "+"Year of production "+car.yearofproduction);
             this.car = car;
         }
         else {
@@ -69,20 +69,20 @@ public class Human extends Animal implements Washable, Comparable<Human> {
         }
     }
     public double getSalary() {
-        System.out.println("Data pobrania "+java.time.LocalDateTime.now());
+        System.out.println("Date "+java.time.LocalDateTime.now());
         System.out.println(this.salary);
         return this.salary;
     }
     public void setSalary(Double salary) {
         if (salary > 0) {
             System.out.println("nowe dane zostały wysłane do systemu księgowego");
-            System.out.println("odebranie aneksu do umowy od pani Hani z kadr");
+            System.out.println("koniecnzie odbierze aneks do umowy od pani Hani z kadr");
             System.out.println("ZUS i US już wiedzą o zmianie wypłaty i nie ma sensu ukrywać dochodu");
             this.salary = salary;
             System.out.println(salary+"zł");
         }
         else {
-            System.out.println("Wynagrodzenie nie moze być na "+salary);
+            System.out.println("Wynagrodzenie nie moze być "+salary);
         }
     }
 

@@ -70,11 +70,11 @@ public abstract class Animal implements Salleable,Feedable {
     @Override
     public void sell(Human seller, Human buyer, Double price) {
         if(seller.pet!= this){
-            System.out.println("Nie można sprzedać przedmiotu nieposiadanego");
+            System.out.println("You cant sell thing you do not own");
 
         }
         else if(buyer.cash<price){
-            System.out.println("Nie stać Cię");
+            System.out.println("You cant afford it");
 
         }
         else{
@@ -82,7 +82,7 @@ public abstract class Animal implements Salleable,Feedable {
             buyer.cash -=price;
             buyer.pet = seller.pet;
             seller.pet = null;
-            System.out.println("Udało ci się sprzedać"+ this + "za "+price);
+            System.out.println("You sold"+ this + "for "+price);
         }
     }
 

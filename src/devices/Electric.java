@@ -7,6 +7,6 @@ public class Electric extends Car {
 
     @Override
     public void refuel() {
-        System.out.println("Naładowano samochód");
+        System.out.println("Car is charged");
     }
 }

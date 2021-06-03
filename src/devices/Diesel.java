@@ -9,6 +9,6 @@ public class Diesel extends Car {
 
     @Override
     public void refuel() {
-        System.out.println("Zatankowano samochód");
+        System.out.println("Car is tanked");
     }
 }

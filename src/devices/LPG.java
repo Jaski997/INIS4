@@ -7,6 +7,6 @@ public class LPG extends Car {
 
     @Override
     public void refuel() {
-        System.out.println("Nagazowany LPG");
+        System.out.println("Car is ashamed");
     }
 }

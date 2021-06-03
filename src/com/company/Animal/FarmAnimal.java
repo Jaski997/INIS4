@@ -18,7 +18,7 @@ public abstract class FarmAnimal extends Animal implements Edible {
             weight += foodWeight;
             System.out.print("Animal weight is now " + this.weight + "\n");
         } else
-            System.out.print("This animal died.\n");
+            System.out.print("This animal has died.\n");
     }
 }
 
