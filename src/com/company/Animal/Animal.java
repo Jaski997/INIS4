@@ -44,25 +44,25 @@ public abstract class Animal implements Salleable,Feedable {
 
     public void feed() {
         if(weight<=0){
-            System.out.println("U cant feed death pet"+weight);
+            System.out.println("You cant feed dead pet"+weight);
 
 
         }
         else{
             weight += 1;
-            System.out.println("Thx for food, bro"+weight);
+            System.out.println("Yummy :3"+weight);
         }
     }
     void takeForAWalk(){
 
         if(weight>=1){
             weight-=1;
-            System.out.println("Thx for a walk"+weight);
+            System.out.println("Your pet is happy"+weight);
 
 
         }
         else{
-            System.out.println("Cant go for a walk with death pet"+weight);
+            System.out.println("You cant walk dead pet"+weight);
         }
 
     }
@@ -70,7 +70,7 @@ public abstract class Animal implements Salleable,Feedable {
     @Override
     public void sell(Human seller, Human buyer, Double price) {
         if(seller.pet!= this){
-            System.out.println("Nie możesz sprzedać czegos czego nie posiadasz");
+            System.out.println("Nie można sprzedać przedmiotu nieposiadanego");
 
         }
         else if(buyer.cash<price){
@@ -82,7 +82,7 @@ public abstract class Animal implements Salleable,Feedable {
             buyer.cash -=price;
             buyer.pet = seller.pet;
             seller.pet = null;
-            System.out.println("Transakcja udana sprzedano"+ this + "za "+price);
+            System.out.println("Udało ci się sprzedać"+ this + "za "+price);
         }
     }
 

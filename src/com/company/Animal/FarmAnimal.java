@@ -1,6 +1,6 @@
 package com.company.Animal;
 
-public class FarmAnimal extends Animal implements Edible {
+public abstract class FarmAnimal extends Animal implements Edible {
 
     public FarmAnimal(String species) {
         super(species);

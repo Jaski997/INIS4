@@ -54,20 +54,20 @@ public class Human extends Animal implements Washable, Comparable<Human> {
 
     public void getCar() {
     }
-        public void setCar(Car car) {
-            if (salary > car.value)
-            {
-                System.out.println("udało się kupić za gotówkę\n "+car.producer+" "+car.model+" "+"Rocznik "+car.yearofproduction);
-                this.car = car;
-            }
-            else if (salary> car.value/12){
-                System.out.println("udało się kupić na kredyt\n "+car.producer+""+car.model+" "+"Rocznik "+car.yearofproduction);
-                this.car = car;
-            }
-            else {
-                System.out.println("zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
-            }
+    public void setCar(Car car) {
+        if (salary > car.value)
+        {
+            System.out.println("udało się kupić za gotówkę\n "+car.producer+" "+car.model+" "+"Rocznik "+car.yearofproduction);
+            this.car = car;
         }
+        else if (salary> car.value/12){
+            System.out.println("udało się kupić na kredyt\n "+car.producer+""+car.model+" "+"Rocznik "+car.yearofproduction);
+            this.car = car;
+        }
+        else {
+            System.out.println("zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
+        }
+    }
     public double getSalary() {
         System.out.println("Data pobrania "+java.time.LocalDateTime.now());
         System.out.println(this.salary);
@@ -91,4 +91,3 @@ public class Human extends Animal implements Washable, Comparable<Human> {
 
     }
 }
-
